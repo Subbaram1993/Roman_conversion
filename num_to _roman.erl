@@ -1,4 +1,4 @@
--module(rom).
+-module(roman).
 -export([roman/1,roman/2,rom/1]).
 
 rom(N) when N >= 1000 -> {N-1000, "M"};
