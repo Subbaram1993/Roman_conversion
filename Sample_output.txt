@@ -1,0 +1,9 @@
+Eshell V11.1.4  (abort with ^G)
+
+
+1> c(roman).
+{ok,roman}
+2> roman:roman(1993).
+MCMXCIII
+ok
+3> 
