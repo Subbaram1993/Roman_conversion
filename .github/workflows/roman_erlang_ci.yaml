@@ -12,12 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build artifact
-        run: |
-          # Build your artifact here
-          # For example, compile a Java project
-          mvn clean package
-
       - name: Store artifact locally
         run: |
           mkdir -p ~/artifacts
