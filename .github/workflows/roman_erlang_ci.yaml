@@ -1,0 +1,24 @@
+name: Build and Store Artifact Locally
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-store:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build artifact
+        run: |
+          # Build your artifact here
+          # For example, compile a Java project
+          mvn clean package
+
+      - name: Store artifact locally
+        run: |
+          mkdir -p ~/artifacts
+          cp target/my-artifact.jar ~/artifacts/
